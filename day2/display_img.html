@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display속성 - img</title>
+    <style>
+        img{
+            
+            width: 300px;
+            height: 200px;
+            margin: 20px 30px 20px 20px;
+            display: block; /*수직 배치 img같은 경우에는 기본이 수평이다*/
+        }
+        .pic{
+            display: none; /*보이지 않게 될뿐만이 아니라 존재자체를 지워버린다.*/
+        }
+  
+
+    </style>
+</head>
+<body>
+    <img src="images/cat.jpg" alt="고양이">
+    <img src="images/eilen.gif" alt="외계인" class="pic">
+    <img src="images/dog.jpg" alt="강아지" >
+</body>
+</html>
