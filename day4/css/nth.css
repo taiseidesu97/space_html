@@ -1,0 +1,35 @@
+/* nth.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 880px;
+    margin: 0 auto;
+}
+.contents{
+width: 500px;
+margin: 0 auto;
+border: 1px solid #ccc;
+padding: 20px;
+}
+/* section의 요소중 첫번째 자식요소 */
+.contents :first-child{
+    color: violet;
+}
+/* n=0 대입 2n이라면 0,2,4,6 등등 계속 두번째 자리에 적용
+그리고 2n-1이렇게 -1이 붙었다면 1,3,5,7 등등 두번째 자리에는 반복이되지만
+시작점에 -1이 붙어있으므로 홀수점인 1,3,5,7이렇게 시행된다 */
+.contents :nth-child(2n){
+    background-color:gold
+}
+/* h2 태그중에서 3번째 요소를 선택 */
+.contents h2:nth-of-type(3){
+    color: red;
+}
+.contents :last-child{
+    background-color: purple;
+}
+
+
+
